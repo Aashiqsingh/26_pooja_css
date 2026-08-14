@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 100px;
+        width: 100%;
+        background-color: teal;
+    }
+
+    .navbar ul li {
+        float: left;
+        list-style: none;
+        width: 150px;
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+
+    .navbar ul li a:hover {
+        background-color: orangered;
+        color: black;
+        text-shadow: 2px 2px 2px white;
+        font-family: cursive;
+        transition: 0.2s;
+    }
+
+    .navbar ul ul {
+        position: absolute;
+        background-color: teal;
+        display: none;
+    }
+
+    .navbar ul li:hover>ul {
+        display: block;
+        /* display: flex; */
+    }
+    .navbar ul ul ul{
+        /* left: 150px; */
+        left: 100%;
+        top: 0;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a>
+                <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a>
+                                <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </li>
+            <li><a href="">Portfolio</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
